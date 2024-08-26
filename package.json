@@ -14,7 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "raspi": "^6.0.1",
+    "raspi-serial": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.7.0",
