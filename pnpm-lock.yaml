@@ -1009,12 +1009,10 @@ packages:
   raspi-peripheral@3.0.4:
     resolution: {integrity: sha512-IG/s6Y4isbTLUmuMPc3TtCLT2jm2ist66p2HmfOBalQ47Z6RKhLJsHj49c0e/aIZ7s45JGeAm6A9iO1Q/rMdVg==}
     engines: {node: '>= 6.0.0'}
-    cpu: [arm, arm64]
 
   raspi-serial@6.0.0:
     resolution: {integrity: sha512-Aid3uHj7NQEShu6uHZanI7zOSeQljNdkR5QMTWF0g8aGJoahBaAY8pzCSTRF7zXKBykEdKL/DpbD/T3wv2SC9A==}
     engines: {node: '>= 10.13.0'}
-    cpu: [arm, arm64]
 
   raspi@6.0.1:
     resolution: {integrity: sha512-vv7P8QgUCC0wjN9aBGi7SKy7LClZSsIMSQyEE+GUVzImbX44OTftj3Vjo+Kbl2d+acmjBNNkEk/jnzXDZMcI5g==}
