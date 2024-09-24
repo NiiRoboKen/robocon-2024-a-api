@@ -10,11 +10,6 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-let LEFT_BOTTON_VOLUME = -127;
-let RIGHT_BOTTON_VOLUME = 127;
-let FRONT_BOTTON_VOLUME = 127;
-let BACK_BOTTON_VOLUME = -127;
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
