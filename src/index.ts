@@ -2,8 +2,14 @@ import express, { Request, Response } from "express";
 import dotenv from "dotenv";
 import { init } from "raspi";
 import { Serial } from "raspi-serial";
-import { cors } from "cors";
+import cors from "cors";
 const { Buffer } = require('node:buffer');
+
+const allowOrigins = ["http://localhost"];
+
+const options: cors.CorsOptions = {
+  origin: allowOrigins
+};
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
@@ -13,7 +19,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(cors());
+app.use(cors(options));
 
 type SerialData = {
   x: number,
